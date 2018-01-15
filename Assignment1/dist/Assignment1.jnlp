@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Assignment1.jnlp">
+  <information>
+    <title>Assignment1</title>
+    <vendor>Rija Fahim</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Assignment1.jar" size="23237" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2185083" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Assignment1" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="Controllers.Assignment1"  name="Assignment1" />
+  <update check="always"/>
+</jnlp>

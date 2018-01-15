@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="623.0" style="-fx-background-color: black;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.NInputFXMLController">
+    <stylesheets>
+        <URL value="@/CSS/ninputfxml.css" />
+    </stylesheets>
+   <children>
+      <Text fill="WHITE" layoutX="150.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter N for NxN Grid">
+         <font>
+            <Font name="AR JULIAN" size="36.0" />
+         </font>
+      </Text>
+      <BorderPane layoutX="181.0" layoutY="214.0" prefHeight="180.0" prefWidth="313.0" style="-fx-background-color: #4C5CAB;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <center>
+            <AnchorPane prefHeight="108.0" prefWidth="280.0" style="-fx-background-color: #663399;">
+               <children>
+                  <JFXTextField fx:id="Nid" layoutX="37.0" layoutY="29.0" maxWidth="238.0" minWidth="180.0" prefHeight="53.0" prefWidth="238.0" promptText="                      " style="-fx-background-color: #FFD700;" unFocusColor="#285c8f">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="12.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXButton fx:id="submit" buttonType="RAISED" layoutX="85.0" layoutY="117.0" onAction="#submit" prefHeight="26.0" prefWidth="143.0" style="-fx-background-color: #42CF50;" text="Proceed">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <font>
+                        <Font name="Segoe UI Semibold" size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
